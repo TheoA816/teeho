@@ -1,0 +1,70 @@
+// Not cleanest (clouds diff speed, change speed slightly midway etc)
+// Alternate may be to have initial cloud that go to end and replace with constant cloud
+
+////////////////////////////// MIXINS //////////////////////////////////////////
+
+// MIXIN - move to end of right screen and teleport to left so it seems seamless
+@mixin keyframes() {
+  @keyframes move {
+    from {
+      left: calc(0vw - 130px);
+    }
+    to {
+      left: 100vw;
+    }
+  }
+}
+
+// MIXIN - make use of keyframe above to shorten animation command
+@mixin animation($left) {
+  $delay: calc(-1 * (25 * $left / 100));
+  animation: move 25s linear #{$delay}s infinite;
+}
+
+// MIXIN - cloud movement
+@mixin cloudMove($left, $top, $cloudNum) {
+  position: absolute;
+  top: #{$top}px;
+  @include keyframes();
+  @include animation($left);
+}
+
+////////////////////////////// CONTAINERS //////////////////////////////////////////
+
+// CLOUD CONTAINER
+.clouds {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+// ALL CLOUDS SIZE
+.cloud {
+  max-width: 130px;
+  height: auto;
+}
+
+/////////////////////////// INDIVIDUAL CLOUDS //////////////////////////////////
+.cloud1 {
+  @include cloudMove(0, 0, 1);
+}
+
+.cloud2 {
+  @include cloudMove(17, 60, 2);
+}
+
+.cloud3 {
+  @include cloudMove(37, -5, 3);
+}
+
+.cloud4 {
+  @include cloudMove(54, 53, 4);
+}
+
+.cloud5 {
+  @include cloudMove(71, -3, 5);
+}
+
+.cloud6 {
+  @include cloudMove(92, 45, 6);
+}

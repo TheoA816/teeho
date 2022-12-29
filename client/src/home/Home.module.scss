@@ -1,0 +1,29 @@
+.wrapper {
+    margin-top: 10vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 10vh 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+    text-shadow: 0 0 5px #000000;
+}
+
+.title {
+    font-size: 5em;
+}
+
+.content {
+    margin-top: 100px;
+    font-size: 1.5em;
+}

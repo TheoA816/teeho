@@ -1,0 +1,81 @@
+.bigContainer {
+  margin: 15vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallContainer {
+  margin: 15vh 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.contact {
+  display: block;
+}
+
+.block {
+  max-width: 80px;
+}
+
+/////////////////////////////////// 8-BIT BOX //////////////////////////////////
+$border: 7px;
+$corner: calc(-1 * $border / 2);
+
+.box {
+    width: fit-content;
+    height: fit-content;
+    max-width: 600px;
+
+    background-color: rgba(43, 0, 255, 0.709);
+
+    border-left: $border solid #2009a3;
+    border-right: $border solid #2009a3;
+    box-sizing: border-box;
+
+    position: relative;
+    display: inline-block;
+
+    font-family: "Press Start 2P";
+    font-size: 1em;
+    color: #ffffff;
+    text-align: left;
+}
+
+.wrapper {
+    padding: 5px;
+    margin: calc($border * -1) 0;
+    border-top: $border solid #2009a3;
+    border-bottom: $border solid #2009a3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.box::before,
+.box::after,
+.wrapper::before,
+.wrapper::after{
+    content: '';
+    width: $border;
+    height: $border;
+    position: absolute;
+    background: #2009a3;
+}
+.box::before{ top: $corner; left: $corner; }
+.box::after{ top: $corner; right: $corner; }
+.wrapper::before{ bottom: $corner; left: $corner; }
+.wrapper::after{ bottom: $corner; right: $corner; }
+////////////////////////////////////////////////////////////////////////////////

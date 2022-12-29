@@ -1,0 +1,12 @@
+.ground {
+    min-height: 150px;
+    margin-left: -5vw;
+
+    width: 100vw;
+    background-image: url("./../photos/block.png");
+    background-size: 50px 50px;
+    background-repeat: round;
+
+    position: relative;
+    z-index: -2;
+}
