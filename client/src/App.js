@@ -7,13 +7,13 @@ import Contact from './contacts/Contact';
 
 function App() {
 
-  const bigDevice = useMediaQuery({
-    query: '(min-width: 888px)'
+  const mobile = useMediaQuery({
+    query: '(pointer:coarse)'
   })
 
   return (
     <div>
-      { bigDevice && <Cloud/> }
+      { !mobile && <Cloud/> }
       <Vine/>
       <Home/>
       <About/>
