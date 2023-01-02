@@ -1,5 +1,4 @@
 import Cloud from './clouds/Cloud';
-import Ground from './ground/Ground';
 import About from './about/About';
 import Home from './home/Home';
 import Vine from './vines/Vine';
