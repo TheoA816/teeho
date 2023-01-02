@@ -34,7 +34,7 @@
 $border: 7px;
 $corner: calc(-1 * $border / 2);
 
-.box {
+.bigBox {
     width: fit-content;
     height: fit-content;
     max-width: 600px;
@@ -50,6 +50,26 @@ $corner: calc(-1 * $border / 2);
 
     font-family: "Press Start 2P";
     font-size: 1em;
+    color: #ffffff;
+    text-align: left;
+}
+
+.smallBox {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90vw;
+
+    background-color: rgba(43, 0, 255, 0.709);
+
+    border-left: $border solid #2009a3;
+    border-right: $border solid #2009a3;
+    box-sizing: border-box;
+
+    position: relative;
+    display: inline-block;
+
+    font-family: "Press Start 2P";
+    font-size: 2.45vw;
     color: #ffffff;
     text-align: left;
 }

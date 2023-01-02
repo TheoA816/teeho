@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useMediaQuery } from 'react-responsive'
 import styles from './Contact.module.scss';
 
 const TextContact = ({ content }) => {
@@ -14,8 +15,12 @@ const TextContact = ({ content }) => {
 		}
 	}
 
+	const bigDevice = useMediaQuery({
+		query: '(min-width: 888px)'
+	})
+
   return (
-    <motion.div className={styles.box}
+    <motion.div className={bigDevice ? styles.bigBox : styles.smallBox}
 			variants={ framerVariants }
     >
       <div className={styles.wrapper}>
