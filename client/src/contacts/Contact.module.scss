@@ -15,7 +15,7 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2vw;
 }
 
 .socialContainer {
@@ -50,6 +50,7 @@ $corner: calc(-1 * $border / 2);
 
     font-family: "Press Start 2P";
     font-size: 1em;
+    line-height: normal;
     color: #ffffff;
     text-align: left;
 }
@@ -84,8 +85,10 @@ $corner: calc(-1 * $border / 2);
     flex-direction: column;
 }
 
-.box::before,
-.box::after,
+.smallBox::before,
+.smallBox::after,
+.bigBox::before,
+.bigBox::after,
 .wrapper::before,
 .wrapper::after{
     content: '';
@@ -94,8 +97,8 @@ $corner: calc(-1 * $border / 2);
     position: absolute;
     background: #2009a3;
 }
-.box::before{ top: $corner; left: $corner; }
-.box::after{ top: $corner; right: $corner; }
+.smallBox::before, .bigBox::before{ top: $corner; left: $corner; }
+.smallBox::after, .bigBox::after{ top: $corner; right: $corner; }
 .wrapper::before{ bottom: $corner; left: $corner; }
 .wrapper::after{ bottom: $corner; right: $corner; }
 ////////////////////////////////////////////////////////////////////////////////

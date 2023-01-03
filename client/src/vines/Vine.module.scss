@@ -1,3 +1,12 @@
+.container {
+    position: fixed;
+    top: 0;
+    right: 5px;
+    width: max-content;
+
+    z-index: 5;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -21,13 +30,4 @@
 
     position: relative;
     top: -160px;
-}
-
-.container {
-    position: fixed;
-    top: 0;
-    right: 5px;
-    width: max-content;
-
-    z-index: 5;
 }

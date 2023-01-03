@@ -36,6 +36,10 @@
   position: absolute;
   left: 0;
   top: 0;
+  
+  width: 100vw;
+  min-height: 250px;
+  overflow-x: hidden;
 }
 
 // ALL CLOUDS SIZE
@@ -66,5 +70,5 @@
 }
 
 .cloud6 {
-  @include cloudMove(92, 45, 6);
+  @include cloudMove(88, 45, 6);
 }

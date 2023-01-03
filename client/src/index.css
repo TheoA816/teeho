@@ -10,6 +10,7 @@ body {
   background-color: #4BB3E2;
   max-width: 100%;
   overflow-x: hidden;
+  line-height: 2em;
 }
 
 code {
