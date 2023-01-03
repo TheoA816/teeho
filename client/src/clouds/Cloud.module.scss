@@ -7,10 +7,10 @@
 @mixin keyframes() {
   @keyframes move {
     from {
-      left: calc(0vw - 130px);
+      left: calc(0% - 130px);
     }
     to {
-      left: 100vw;
+      left: 100%;
     }
   }
 }
