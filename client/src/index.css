@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
-/* body css for this app put in App.css for chrome on mobile notch problem */
-
 body {
-  margin: 0;
+  margin: 0 5vw;
   font-family: 'Press Start 2P', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #4BB3E2;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 code {
