@@ -8,7 +8,7 @@ const Me = () => {
         <div className={styles.wrapper}>
         <div className={styles.ppcontainer}>
           <img src={theo} className={styles.profpic}></img>
-          <span>Theo Fabian Ang</span>
+          <span className={styles.title}>Theo Fabian Ang</span>
         </div>
         <span className={styles.header}>INFO</span>
         <ul>

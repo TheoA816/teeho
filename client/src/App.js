@@ -4,6 +4,7 @@ import Home from './home/Home';
 import Vine from './vines/Vine';
 import Contact from './contacts/Contact';
 import './App.css'
+import Portfolio from './portfolio/Portfolio';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Vine/>
       <Home/>
       <About/>
+      <Portfolio/>
       <Contact/>
     </div>
   );

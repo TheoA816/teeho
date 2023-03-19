@@ -20,6 +20,11 @@ li {
 
 a {
     color: #F8D831;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -109,6 +114,4 @@ $corner: calc(-1 * $border / 2);
 .ppcontainer {
     display: flex;
     align-items: center;
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
 }
