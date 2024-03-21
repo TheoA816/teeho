@@ -1,49 +1,33 @@
 .button {
   background: white;
   border: none;
-  
+
   width: fit-content;
   font-size: 10px;
-  font-family: 'Press Start 2P';
   padding: 0.5em;
 
   box-shadow: 
   // BASES AROUND (WHITE)
-    -0.2em 0 white,     // L  
-    0 -0.2em white,     // U
-    0.1em 0 white,      // R
-    0 0.1em white,      // D
-
-  // BASES AROUND (BLACK)
+    -0.2em 0 white,
+    // L
+    0 -0.2em white,
+    // U
+    0.1em 0 white,
+    // R
+    0 0.1em white,
+    // D
+    // BASES AROUND (BLACK)
     -0.3em 0,
-    0 -0.3em,
-    0.3em 0,
-    0 0.3em,
-
-  // TOP LEFT
+    0 -0.3em, 0.3em 0, 0 0.3em,
+    // TOP LEFT
     -0.1em -0.2em white,
-    -0.2em -0.1em white,
-    -0.1em -0.3em,
-    -0.3em -0.1em,
-  
-  // TOP RIGHT
+    -0.2em -0.1em white, -0.1em -0.3em, -0.3em -0.1em,
+    // TOP RIGHT
     0.1em -0.1em white,
-
-  // BOTTOM RIGHT
-
-
-  // BOTTOM LEFT
+    // BOTTOM RIGHT
+    // BOTTOM LEFT
     -0.1em 0.1em white,
-
-  // EDGES
+    // EDGES
     -0.2em -0.2em,
-
-    0.2em -0.1em,
-    0.1em -0.2em,
-
-    0.2em 0.2em,
-
-    -0.2em 0.1em,
-    -0.1em 0.2em,
-  ;
+    0.2em -0.1em, 0.1em -0.2em, 0.2em 0.2em, -0.2em 0.1em, -0.1em 0.2em;
 }

@@ -1,39 +1,40 @@
 import { FaBars } from "react-icons/fa";
-import styles from './Vine.module.scss';
+import styles from "./Vine.module.scss";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import VineButton from "./VineButton";
 
 const Vine = () => {
-
   const [show, setShow] = useState(false);
 
   const onClick = () => {
     setShow(!show);
-  }
+  };
 
   const framerVariants = {
-    open: { y: '160px' },
-    close: { y: '-160px' }
-  }
+    open: { y: "160px" },
+    close: { y: "-160px" },
+  };
 
   return (
     <div className={styles.container}>
       <div className={styles.menu}>
-        <FaBars size={50} onClick={onClick}/>
+        <FaBars size={50} onClick={onClick} />
       </div>
-      <motion.div className={styles.buttons}
-        animate={ show ? "open" : "close" }
+      <motion.div
+        className={styles.buttons}
+        animate={show ? "open" : "close"}
         variants={framerVariants}
-        transition={{ type: 'tween', duration: 0.8 }}
-        initial={ false }
+        transition={{ type: "tween", duration: 0.8 }}
+        initial={false}
       >
-        <VineButton section="Home"/>
+        {/* <VineButton section="Home"/>
         <VineButton section="About"/>
-        <VineButton section="Contact"/>
+        <VineButton section="Contact"/> */}
+        <VineButton section="Coming Soon" />
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Vine
+export default Vine;
